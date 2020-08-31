@@ -25,3 +25,7 @@ body{
 .code{
     margin-top: 10%;
 }
+
+#hex-code:hover, #rgb-code:hover{
+    color: rgb(41, 41, 41);
+}
