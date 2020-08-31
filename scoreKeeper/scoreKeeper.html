@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="scoreKeeper.css">
+    <title>Score Keeper</title>
+</head>
+<body>
+
+    <div id="score-keeper" class="center">
+        <h1 style="text-align: center;" id="get-to">Get to 5 to win!</h1>
+        <div id="player-scores">
+            <div class="row">
+                <div class="col-md-6" ><h1 id="p1-name">Player 1</h1></div>
+                <div class="col-md-6 align-right" ><h1 id="p2-name">Player 2</h1></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4" id="p1-score"><h1>0</h1></div>
+
+                <div class="col-md-4" id="change-score">
+                    <form id="change-score">
+                        <input type="text" placeholder="Change Score" id="score-to-win">
+                        <br><br>
+                        <button id="change-score-btn">Change score to win</button>
+                    </form>
+                </div>
+
+                <div class="col-md-4 align-right" id="p2-score"><h1>0</h1></div>
+            </div>
+
+        </div>
+    
+
+        <br>
+
+        <div class="horizontal-center">
+            <form>
+                <h2>Add Score To:</h2>
+                <div class="row">
+                    <div class="col-md-6" id="add-player1"><button>Player 1</button></div>
+                    <div class="col-md-6" id="add-player2"><button>Player 2</button></div>
+                </div>
+            </form>
+        </div>
+
+        <div class="horizontal-center">
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <br>
+        <form id="change-name">
+            <div class="row">
+                <div class="col-md-6 align-right"><input type="text"  id="p1-new-name" placeholder="Player 1"></div>
+                <div class="col-md-6"><input type="text" id="p2-new-name" placeholder="Player 2"></div>
+            </div>
+            <br>
+            <div class="horizontal-center">
+                <button class="button" id="name-btn">Change Name!</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="scoreKeeper.js"></script>
+</body>
+</html>

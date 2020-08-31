@@ -1,0 +1,47 @@
+.align-right{
+    text-align: right;
+}
+
+body{
+    background-color: #E9C46A;
+    color: #264653;
+}
+
+#score-keeper{
+ width: 700px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.horizontal-center{
+    text-align: center;
+}
+
+#change-score{
+    text-align: center;
+}
+
+button{
+    background: #e76f51;
+    color: #264653;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    font-weight: 600;
+}
+
+.win{
+    color: #2a9d8f;
+}
+
+input{
+    border: none;
+}

@@ -1,0 +1,27 @@
+#color-btn{
+    color: white;
+    background: rgb(51, 179, 157);
+    border: none;
+    padding: 10px;
+    font-size: 40px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.center {
+    width: 50%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #e0e0e0;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.code{
+    margin-top: 10%;
+}
