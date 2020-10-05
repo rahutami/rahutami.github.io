@@ -33,6 +33,8 @@
                 <p class="ans">Magnitude: &#8730;</p>
             </div>
         </div>
+
+        <h2>Basic Vector Operation</h2>
         
         <div class="row">
             <div class="dot-menu menu">
@@ -93,6 +95,7 @@
             </div>
         </div>
 
+        <h2>Distance</h2>
         <div class="row">
             <div class="pl-menu menu">
                 <h3>Point-Line Distance</h3>
@@ -114,6 +117,51 @@
                 <p>Plane 2: <input type="text" id="pl-plane-x2"> x + <input type="text" id="pl-plane-y2"> y + <input type="text" id="pl-plane-z2"> z + <input type="text" id="plane2-k"> = 0</p>
                 <button class="btn pl-plane-btn">Count</button>
                 <p class="ans">Distance: </p>
+            </div>
+        </div>
+
+
+        <h2>Line Equation</h2>
+        <div class="row">
+            <div class="menu line-2p-menu">
+                <h3>From Two Points</h3>
+                <p>Point 1: (<input type="text" id="line-2p-x1">, <input type="text" id="line-2p-y1">, <input type="text" id="line-2p-z1">)</p>
+                <p>Point 2: (<input type="text" id="line-2p-x2">, <input type="text" id="line-2p-y2">, <input type="text" id="line-2p-z2">)</p>
+                <button class="btn line-2p-btn">Count</button>
+                <p class="ans">Parametric Equations: <br>x<br>y<br>z</p>
+            </div>
+            <div class="menu line-pv-menu">
+                <h3>From One Point and One Vector</h3>
+                <p>Point: (<input type="text" id="line-pv-x1">, <input type="text" id="line-pv-y1">, <input type="text" id="line-pv-z1">)</p>
+                <p>Vector: (<input type="text" id="line-pv-x2">, <input type="text" id="line-pv-y2">, <input type="text" id="line-pv-z2">)</p>
+                <button class="btn line-pv-btn">Count</button>
+                <p class="ans">Parametric Equations: <br>x<br>y<br>z</p>
+            </div>
+            <div class="menu line-pl-menu">
+                <h3>From Two Intersecting Planes</h3>
+                <p>Plane 1: <input type="text" id="line-pl-x1"> x + <input type="text" id="line-pl-y1"> y + <input type="text" id="line-pl-z1"> z + <input type="text" id="line-pl-k1"> = 0</p>
+                <p>Plane 2: <input type="text" id="line-pl-x2"> x + <input type="text" id="line-pl-y2"> y + <input type="text" id="line-pl-z2"> z + <input type="text" id="line-pl-k2"> = 0</p>
+                <button class="btn line-pl-btn">Count</button>
+                <p class="ans">Parametric Equations: <br>x<br>y<br>z</p>
+            </div>
+        </div>
+
+        <h2>Plane Equation</h2>
+        <div class="row">
+            <div class="menu plane-3p-menu">
+                <h3>From Three Points</h3>
+                <p>Point 1: (<input type="text" id="plane-2p-x1">, <input type="text" id="plane-2p-y1">, <input type="text" id="plane-2p-z1">)</p>
+                <p>Point 2: (<input type="text" id="plane-2p-x2">, <input type="text" id="plane-2p-y2">, <input type="text" id="plane-2p-z2">)</p>
+                <p>Point 3: (<input type="text" id="plane-2p-x3">, <input type="text" id="plane-2p-y3">, <input type="text" id="plane-2p-z3">)</p>
+                <button class="btn plane-3p-btn">Count</button>
+                <p class="ans">Parametric Equations: <br>x<br>y<br>z</p>
+            </div>
+            <div class="menu plane-pv-menu">
+                <h3>From One Point and a Normal Vector</h3>
+                <p>Point: (<input type="text" id="plane-pv-x1">, <input type="text" id="plane-pv-y1">, <input type="text" id="plane-pv-z1">)</p>
+                <p>Normal Vector: (<input type="text" id="plane-pv-x2">, <input type="text" id="plane-pv-y2">, <input type="text" id="plane-pv-z2">)</p>
+                <button class="btn plane-pv-btn">Count</button>
+                <p class="ans">Solution: <br>x<br>y<br>z</p>
             </div>
         </div>
         
