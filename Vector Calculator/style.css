@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body{
+    background-color: #ececec;
+    color: #222831;
+}
+var.vector-sign {
+    font-style : normal;
+}
+var.vector-sign span {
+    margin-left: -.55em;   /* shift the arrow back over the letter */
+    vertical-align : .2em; /* tune the arrow vertical position */
+}
+
+.vector, .menu{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn{
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f2a365;
+    color: #30475e;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #e27a2b;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+}
+
+input[type=text]{
+    width: 20px;
+}
+
+.ans{
+    visibility: hidden;
+}
+
+.answered{
+    visibility: visible;
+}
+
+.title{
+    width: 50%;
+    margin-left: 50px;
+}
+
+.wunder{
+    width: 30%;
+    margin: auto;
+    text-align: right;
+    font-family: 'Dancing Script', cursive;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <div class="title"><h1>Vector Calculator</h1></div>
+        <div class="wunder"><h1>Wundersmith</h1></div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="left vector">
+                <h3>Vector <var class="vector-sign">u<span>&#8407;</span></var></h3>
+                <h5>( <input type="text" id="u1">, <input type="text" id="u2">, <input type="text" id="u3"> )</h5>
+                <button class="btn mag-btn">Count Vector's Magnitude</button>
+                <p class="ans">Magnitude: &#8730;</p>
+            </div>
+            <div class="middle vector">
+                <h3>Vector <var class="vector-sign">v<span>&#8407;</span></var></h3>
+                <h5>( <input type="text" id="v1">, <input type="text" id="v2">, <input type="text" id="v3"> )</h5>
+                <button class="btn mag-btn">Count Vector's Magnitude</button>
+                <p class="ans">Magnitude: &#8730;</p>
+            </div>
+            <div class="right vector">
+                <h3>Vector <var class="vector-sign">w<span>&#8407;</span></var></h3>
+                <h5>( <input type="text" id="w1">, <input type="text" id="w2">, <input type="text" id="w3"> )</h5>
+                <button class="btn mag-btn">Count Vector's Magnitude</button>
+                <p class="ans">Magnitude: &#8730;</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="dot-menu menu">
+                <h3>Dot Product</h3>
+                <label for="dot-vec-1">First vector: </label>
+                <select name="" id="dot-vec-1">
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                </select>
+                <label for="dot-vec-2">Second vector: </label>
+                <select name="" id="dot-vec-2">
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                </select>
+                <button class="dot-btn btn">Count</button>
+                <p class="ans"><span class="vec-1"></span>&#8729;<span class="vec-2">=</span></p>
+            </div>
+            
+            
+            <div class="cross-menu menu">
+                <h3>Cross Product</h3>
+                <label for="cross-vec-1">First vector: </label>
+                <select name="" id="cross-vec-1">
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                </select>
+                <label for="cross-vec-2">Second vector: </label>
+                <select name="" id="cross-vec-2">
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                </select>
+                <button class="cross-btn btn">Count</button>
+                <p class="ans"><span class="vec-1"></span>&#215;<span class="vec-2">=</span></p>
+            </div>
+    
+            
+            
+            <div class="op-menu menu">
+                <h3>Orthogonal Projection</h3>
+                <label for="op-vec-1">Of Vector </label>
+                <select name="" id="op-vec-1">
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                </select>
+                <label for="op-vec-2"> onto </label>
+                <select name="" id="op-vec-2">
+                    <option value="u">u</option>
+                    <option value="v">v</option>
+                    <option value="w">w</option>
+                </select>
+                <button class="op-btn btn">Count</button>
+                <p class="ans">Orthogonal projection of <span class="vec-1"></span> onto <span class="vec-2">=</span></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="pl-menu menu">
+                <h3>Point-Line Distance</h3>
+                <p>Point: (<input type="text" id="pl-x">, <input type="text" id="pl-y">)</p>
+                <p>Line: <input type="text" id="line-x"> x + <input type="text" id="line-y"> y + <input type="text" id="line-k"> = 0</p>
+                <button class="btn pl-btn">Count</button>
+                <p class="ans">Distance: </p>
+            </div>
+            <div class="pp-menu menu">
+                <h3>Point-Plane Distance</h3>
+                <p>Point: (<input type="text" id="pp-x">, <input type="text" id="pp-y">, <input type="text" id="pp-z">)</p>
+                <p>Plane: <input type="text" id="plane-x"> x + <input type="text" id="plane-y"> y + <input type="text" id="plane-z"> z + <input type="text" id="plane-k"> = 0</p>
+                <button class="btn pp-btn">Count</button>
+                <p class="ans">Distance: </p>
+            </div>
+            <div class="paralelplane-menu menu">
+                <h3>Parallel Planes Distance</h3>
+                <p>Plane 1: <input type="text" id="pl-plane-x1"> x + <input type="text" id="pl-plane-y1"> y + <input type="text" id="pl-plane-z1"> z + <input type="text" id="plane1-k"> = 0</p>
+                <p>Plane 2: <input type="text" id="pl-plane-x2"> x + <input type="text" id="pl-plane-y2"> y + <input type="text" id="pl-plane-z2"> z + <input type="text" id="plane2-k"> = 0</p>
+                <button class="btn pl-plane-btn">Count</button>
+                <p class="ans">Distance: </p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
