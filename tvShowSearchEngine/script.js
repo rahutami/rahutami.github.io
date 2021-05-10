@@ -4,7 +4,7 @@ let button = document.getElementById("search-button");
 const onButtonClick = e => {
     // Show results
     let query = document.getElementById("search-input").value;
-    fetch(`http://api.tvmaze.com/search/shows?q=${query}`)
+    fetch(`https://api.tvmaze.com/search/shows?q=${query}`)
     .then(response => response.json())
     .then(data => showResult(data))
     .catch(err => console.log(err));
