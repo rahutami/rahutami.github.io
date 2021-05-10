@@ -1,0 +1,19 @@
+.container{
+    padding-top: 15px;
+}
+
+.input-group{
+    margin: 0;
+}
+
+.dropdown-menu{
+    width: 100%;
+    position: relative;
+}
+
+#results{
+    margin-top: 60px;
+}
+.result{
+    text-align: center;
+}

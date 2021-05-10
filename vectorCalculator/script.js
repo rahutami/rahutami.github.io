@@ -104,31 +104,27 @@ function countPlane3P(e){
         y : vec1.z * vec2.x - vec2.z * vec1.z,
         z : vec1.x * vec2.y - vec1.y * vec2.x
     }
-    let ans = {};
-    
-    if (point.x !== 0) ans.x = `${point.x} `;
-    else ans.x = "";
-    if (point.y !== 0) ans.y = `${point.y} `;
-    else ans.y = "";
-    if (point.z !== 0) ans.z = `${point.z} `;
-    else ans.z = "";
-    
-    if (vec.x > 0 && ans.x === "") ans.x += `${vec.x}t`;
-    else if (vec.x > 0) ans.x += `+ ${vec.x}t`;
-    else if (vec.x < 0) ans.x += `- ${Math.abs(vec.x)}t`;
-    else if (ans.x ==="") ans.x = `0`;
 
-    if (vec.y > 0 && ans.y === "") ans.y += `${vec.y}t`;
-    else if (vec.y > 0) ans.y += `+ ${vec.y}t`;
-    else if (vec.y < 0) ans.y += `- ${Math.abs(vec.y)}t`;
-    else if (ans.y ==="") ans.y = `0`;
+    let ans = "";
 
-    if (vec.z > 0 && ans.z === "") ans.z += `${vec.z}t`;
-    else if (vec.z > 0) ans.z += `+ ${vec.z}t`;
-    else if (vec.z < 0) ans.z += `- ${Math.abs(vec.z)}t`;
-    else if (ans.z ==="") ans.z = `0`;
+        if (vec.x !== 0) ans += `${point.x}x `;
 
-    e.target.parentElement.lastElementChild.innerHTML = `Parametric Equations:<br>x = ${ans.x}<br>y = ${ans.y}<br>z = ${ans.z}`;
+        if (vec.y !== 0 && ans === "") ans += `${point.y}y `;
+        else if (vec.y > 0) ans += `+ ${point.y}y `;
+        else if (vec.y < 0) ans += `- ${Math.abs(point.y)}y `;
+
+        if (vec.z !== 0 && ans === "") ans += `${point.z}z `;
+        else if (vec.z > 0) ans += `+ ${point.z}z `;
+        else if (vec.z < 0) ans += `- ${Math.abs(point.z)}z `;
+
+        let anskoef = (-1)*(point.x * vec.x + point.y * vec.y + point.z * vec.z);
+
+        if (anskoef > 0) ans += `+ ${anskoef}`;
+        else if (anskoef < 0) ans += `- ${Math.abs(anskoef)}`;
+
+        ans += " = 0"
+
+        e.target.parentElement.lastElementChild.innerHTML = ans;
     e.target.parentElement.lastElementChild.classList.add("answered");
 }
 
