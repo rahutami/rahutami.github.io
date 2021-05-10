@@ -97,10 +97,11 @@ const getRecommendedWord = (query) => {
     }
 
     // Sort search history based on when the last time the word is searched
-    // words.sort(compareByDate);
+    words.sort(compareByDate);
 
     // Sort search history based on number of searches have done in the past
-    words.sort(compareByNumSearch);
+    // words.sort(compareByNumSearch);
+
     // Membuat object regex dari query
     let regexKey = new RegExp(`^${strToRegex(query)}`)
     
